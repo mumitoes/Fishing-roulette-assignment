@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Fishing_roulette_assignment.Bike">
+    <Position X="0.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bike.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fishing_roulette_assignment.Cast_out_line" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIABAACABEAAAAACAAAACAAAAAAgAAEAAAAAAAAg=</HashCode>
+      <FileName>Cast out line.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fishing_roulette_assignment.Cola">
+    <Position X="3.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cola.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fishing_roulette_assignment.FishCatch">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAIAAAAABCAAQAIAAAAIQhgAAgAAAAAAAACAAAABA=</HashCode>
+      <FileName>FishCatch.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fishing_roulette_assignment.Form1" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAFCgQCAAAAACMAABCEGABAGAEAgAJABEBAAA=</HashCode>
+      <FileName>Form1.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fishing_roulette_assignment.snagged" Collapsed="true">
+    <Position X="13.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIgBAACABECAAIACAAAACAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>snagged.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fishing_roulette_assignment.Sneaker">
+    <Position X="5.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sneaker.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fishing_roulette_assignment.Trout">
+    <Position X="7.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Trout.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fishing_roulette_assignment.Win_Game" Collapsed="true">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIABAACABMAAAAACAAAACAAAAAAgAQAAAAAAAABA=</HashCode>
+      <FileName>Win Game.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fishing_roulette_assignment.Worm_on_hook" Collapsed="true">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAhAACABEAAAAACAAAACAAAAAAgAAAAAAAAAAAg=</HashCode>
+      <FileName>Worm on hook.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fishing_roulette_assignment.My.MyApplication" Collapsed="true">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fishing_roulette_assignment.My.MySettings" Collapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAABAAIAAABAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fishing_roulette_assignment.My.Resources.Resource1" Collapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABBAAAAAACAAABAJEAAAAQIAAIAACAAAACBAAJA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Module Name="Fishing_roulette_assignment.My.MySettingsProperty" Collapsed="true">
+    <Position X="9.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="Fishing_roulette_assignment.My.Resources.Resources" Collapsed="true">
+    <Position X="11.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
