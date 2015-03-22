@@ -11,11 +11,8 @@
         _castsLeft = 6
         _name = ""
         _caught = _castsLeft
-
-        'My.Computer.Audio.Play("https://drive.google.com/file/d/0B0_j_bLfv1V_UEhGUUtZWVRXenc/view?usp=sharing", AudioPlayMode.Background)
-        '  Media.SoundPlayer.Equals. Stream.Position = 0; 
-
     End Sub
+
 
     Public ReadOnly Property Counter() As Integer
         Get
