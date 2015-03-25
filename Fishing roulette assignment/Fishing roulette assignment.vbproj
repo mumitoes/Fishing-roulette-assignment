@@ -230,12 +230,6 @@
     <None Include="Resources\river.wav" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Unit Test 1\Unit Test 1.vbproj">
-      <Project>{6295a78d-8c63-49a4-8602-766445a974ea}</Project>
-      <Name>Unit Test 1</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\sneaker.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
