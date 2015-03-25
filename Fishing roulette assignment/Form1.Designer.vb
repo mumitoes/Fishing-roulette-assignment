@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.btnBait = New System.Windows.Forms.Button()
         Me.btnCast = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
@@ -38,17 +39,19 @@ Partial Class Form1
         Me.lblXSnag = New System.Windows.Forms.Label()
         Me.pbCatch = New System.Windows.Forms.PictureBox()
         Me.pbBoyFishing = New System.Windows.Forms.PictureBox()
+        Me.AxWindowsMediaPlayer1 = New AxWMPLib.AxWindowsMediaPlayer()
         CType(Me.pbCatch, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbBoyFishing, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnBait
         '
         Me.btnBait.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnBait.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBait.Location = New System.Drawing.Point(603, 29)
+        Me.btnBait.Location = New System.Drawing.Point(603, 20)
         Me.btnBait.Name = "btnBait"
-        Me.btnBait.Size = New System.Drawing.Size(152, 63)
+        Me.btnBait.Size = New System.Drawing.Size(161, 73)
         Me.btnBait.TabIndex = 0
         Me.btnBait.Text = "Step one - Bait your hook"
         Me.btnBait.UseVisualStyleBackColor = False
@@ -59,7 +62,7 @@ Partial Class Form1
         Me.btnCast.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCast.Location = New System.Drawing.Point(603, 99)
         Me.btnCast.Name = "btnCast"
-        Me.btnCast.Size = New System.Drawing.Size(152, 71)
+        Me.btnCast.Size = New System.Drawing.Size(161, 71)
         Me.btnCast.TabIndex = 1
         Me.btnCast.Text = "Step two - Cast your line"
         Me.btnCast.UseVisualStyleBackColor = False
@@ -68,9 +71,9 @@ Partial Class Form1
         '
         Me.btnExit.BackColor = System.Drawing.Color.Red
         Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.Location = New System.Drawing.Point(895, 182)
+        Me.btnExit.Location = New System.Drawing.Point(875, 159)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(119, 68)
+        Me.btnExit.Size = New System.Drawing.Size(80, 47)
         Me.btnExit.TabIndex = 2
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = False
@@ -79,9 +82,9 @@ Partial Class Form1
         '
         Me.btnGoFish.BackColor = System.Drawing.Color.GreenYellow
         Me.btnGoFish.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGoFish.Location = New System.Drawing.Point(603, 182)
+        Me.btnGoFish.Location = New System.Drawing.Point(604, 176)
         Me.btnGoFish.Name = "btnGoFish"
-        Me.btnGoFish.Size = New System.Drawing.Size(152, 68)
+        Me.btnGoFish.Size = New System.Drawing.Size(160, 68)
         Me.btnGoFish.TabIndex = 3
         Me.btnGoFish.Text = "Go Fish!"
         Me.btnGoFish.UseVisualStyleBackColor = False
@@ -145,25 +148,27 @@ Partial Class Form1
         'lblCast
         '
         Me.lblCast.AutoSize = True
-        Me.lblCast.Location = New System.Drawing.Point(714, 278)
+        Me.lblCast.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCast.Location = New System.Drawing.Point(852, 269)
         Me.lblCast.Name = "lblCast"
-        Me.lblCast.Size = New System.Drawing.Size(0, 13)
+        Me.lblCast.Size = New System.Drawing.Size(0, 24)
         Me.lblCast.TabIndex = 13
         '
         'lblCastTitle
         '
         Me.lblCastTitle.AutoSize = True
-        Me.lblCastTitle.Location = New System.Drawing.Point(620, 272)
+        Me.lblCastTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCastTitle.Location = New System.Drawing.Point(625, 267)
         Me.lblCastTitle.Name = "lblCastTitle"
-        Me.lblCastTitle.Size = New System.Drawing.Size(70, 13)
+        Me.lblCastTitle.Size = New System.Drawing.Size(118, 24)
         Me.lblCastTitle.TabIndex = 14
         Me.lblCastTitle.Text = "No. Casts left"
         '
         'btnPlayAgain
         '
         Me.btnPlayAgain.BackColor = System.Drawing.Color.Yellow
-        Me.btnPlayAgain.Font = New System.Drawing.Font("Rockwell", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPlayAgain.Location = New System.Drawing.Point(761, 182)
+        Me.btnPlayAgain.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPlayAgain.Location = New System.Drawing.Point(855, 62)
         Me.btnPlayAgain.Name = "btnPlayAgain"
         Me.btnPlayAgain.Size = New System.Drawing.Size(128, 71)
         Me.btnPlayAgain.TabIndex = 16
@@ -182,9 +187,9 @@ Partial Class Form1
         'pbCatch
         '
         Me.pbCatch.BackColor = System.Drawing.Color.Transparent
-        Me.pbCatch.Location = New System.Drawing.Point(377, 367)
+        Me.pbCatch.Location = New System.Drawing.Point(365, 367)
         Me.pbCatch.Name = "pbCatch"
-        Me.pbCatch.Size = New System.Drawing.Size(101, 105)
+        Me.pbCatch.Size = New System.Drawing.Size(134, 116)
         Me.pbCatch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pbCatch.TabIndex = 12
         Me.pbCatch.TabStop = False
@@ -194,16 +199,27 @@ Partial Class Form1
         Me.pbBoyFishing.Image = Global.Fishing_roulette_assignment.My.Resources.Resource1.boy_fishing
         Me.pbBoyFishing.Location = New System.Drawing.Point(40, 114)
         Me.pbBoyFishing.Name = "pbBoyFishing"
-        Me.pbBoyFishing.Size = New System.Drawing.Size(489, 327)
+        Me.pbBoyFishing.Size = New System.Drawing.Size(554, 358)
         Me.pbBoyFishing.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pbBoyFishing.TabIndex = 7
         Me.pbBoyFishing.TabStop = False
+        '
+        'AxWindowsMediaPlayer1
+        '
+        Me.AxWindowsMediaPlayer1.Enabled = True
+        Me.AxWindowsMediaPlayer1.Location = New System.Drawing.Point(28, 26)
+        Me.AxWindowsMediaPlayer1.Name = "AxWindowsMediaPlayer1"
+        Me.AxWindowsMediaPlayer1.OcxState = CType(resources.GetObject("AxWindowsMediaPlayer1.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxWindowsMediaPlayer1.Size = New System.Drawing.Size(75, 23)
+        Me.AxWindowsMediaPlayer1.TabIndex = 18
+        Me.AxWindowsMediaPlayer1.Visible = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1051, 613)
+        Me.Controls.Add(Me.AxWindowsMediaPlayer1)
         Me.Controls.Add(Me.lblXSnag)
         Me.Controls.Add(Me.btnPlayAgain)
         Me.Controls.Add(Me.lblCastTitle)
@@ -224,6 +240,7 @@ Partial Class Form1
         Me.Text = "Form1"
         CType(Me.pbCatch, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbBoyFishing, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -244,5 +261,6 @@ Partial Class Form1
     Friend WithEvents lblCastTitle As System.Windows.Forms.Label
     Friend WithEvents btnPlayAgain As System.Windows.Forms.Button
     Friend WithEvents lblXSnag As System.Windows.Forms.Label
+    Friend WithEvents AxWindowsMediaPlayer1 As AxWMPLib.AxWindowsMediaPlayer
 
 End Class

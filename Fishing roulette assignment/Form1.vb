@@ -9,10 +9,11 @@
     Dim intBike As Integer
     Dim intSnag As Integer
 
-    'pull through main background audio file
-    'Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As EventArgs) Handles MyBase.Load
-    'PlayLoopingBackgroundSoundFile()
-    'My.Computer.Audio.Play("https://drive.google.com/file/d/0B0_j_bLfv1V_TEtDaDd0ZTdhNFU/view?usp=sharing", AudioPlayMode.BackgroundLoop)
+    'pull through main background audio file stream
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As EventArgs) Handles MyBase.Load
+        ' Sub PlayBackgroundSoundResource()
+        My.Computer.Audio.Play(My.Resources.Resource1.river, AudioPlayMode.BackgroundLoop)
+    End Sub
 
     ' End Sub
 
@@ -32,6 +33,8 @@
     'to set action for button Go Fish - the game commences
     Private Sub btnGoFish_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGoFish.Click
 
+        My.Computer.Audio.Play(My.Resources.Resource1.river, AudioPlayMode.BackgroundLoop)
+
         'pulls through If, Then statement for Spin action (counter goes down from 6)
         myfishcatch.spin()
 
@@ -46,22 +49,26 @@
         Select Case intComputerChoice
             Case 1 'trout catch
                 pbCatch.Image = My.Resources.Resource1.trout
+                My.Computer.Audio.Play(My.Resources.Resource1.splash, AudioPlayMode.Background)
                 myfishcatch.IsCaught = True
                 intTrout += 1
                 lblTrout.Text = ("You caught" & " " & intTrout & " " & "Trout")
 
             Case 2 'cola catch
                 pbCatch.Image = My.Resources.Resource1.cola
+                My.Computer.Audio.Play(My.Resources.Resource1.splash, AudioPlayMode.Background)
                 intCola += 1
                 lblCola.Text = ("You caught" & " " & intCola & " " & "Cola cans")
 
             Case 3 'bike catch
                 pbCatch.Image = My.Resources.Resource1.rusty_bike
+                My.Computer.Audio.Play(My.Resources.Resource1.splash, AudioPlayMode.Background)
                 intBike += 1
                 lblRustyBike.Text = ("You caught" & " " & intBike & " " & "Rusty bikes! LOL")
 
             Case 4 'bike catch
                 pbCatch.Image = My.Resources.Resource1.sneaker
+                My.Computer.Audio.Play(My.Resources.Resource1.splash, AudioPlayMode.Background)
                 intSneaker += 1
                 lblSneaker.Text = ("You caught" & " " & intSneaker & " " & "Sneakers")
 
@@ -101,27 +108,5 @@
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Me.Close()
     End Sub
-
-    '    'review this code to see if my images can be merged
-
-    '    'Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-    '    '    Dim newimage As New Bitmap(ImageList1.Images(0).Width, ImageList1.Images(0).Height)
-    '    '    Dim g As Graphics = Graphics.FromImage(newimage)
-    '    '    g.DrawImage(ImageList1.Images(0), 0, 0)
-    '    '    g.DrawImage(ImageList1.Images(1), 0, 0)
-    '    '    PictureBox1.Image = newimage
-    '    '    g.Dispose()
-    '    'End Sub
-
-    Private Sub PlayLoopingBackgroundSoundFile()
-        Throw New NotImplementedException
-    End Sub
-
-
-
-
-
-
-
 
 End Class

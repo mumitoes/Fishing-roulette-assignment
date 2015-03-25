@@ -142,19 +142,19 @@
   <data name="snag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\snag.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sneaker" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\sneaker.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\splash.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="stream" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\stream.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="trout" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\trout.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="worm_on_hook" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\worm on hook.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="river" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\river.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sneaker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\sneaker.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

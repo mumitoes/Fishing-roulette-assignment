@@ -175,9 +175,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\sneaker.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\trout.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -193,16 +190,10 @@
     <None Include="Resources\splash.wav" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\stream.wav" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\worm on hook.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cast line out.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sneaker.gif" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\broken_line.jpg" />
@@ -234,6 +225,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Red X snag.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\river.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Unit Test 1\Unit Test 1.vbproj">
+      <Project>{6295a78d-8c63-49a4-8602-766445a974ea}</Project>
+      <Name>Unit Test 1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sneaker.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
